@@ -16,10 +16,6 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - name: Set Debugging Environment Variable
-        run: echo "ACTIONS_STEP_DEBUG=true" >> $GITHUB_ENV   # Set debug variable for the job
-      - name: Print Debug Message
-        run: echo "Debugging is now enabled for the steps in this job."
       - run: echo "Exploring Workflow Dispatch Trigger"
 
   job2:                                       #added
